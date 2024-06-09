@@ -332,7 +332,7 @@ SCAN:
 	}
 	close(lines)
 
-	for i := range worker {
+	for range worker {
 		<-done
 	}
 
