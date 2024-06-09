@@ -48,7 +48,6 @@ func Download(ctx context.Context, path string, keep bool) error {
 	sem := make(chan struct{}, runtime.NumCPU()*4)
 	wg := &sync.WaitGroup{}
 	for i := 0; i < max; i++ {
-		i := i
 		wg.Add(1)
 		go func() {
 			sem <- struct{}{}
