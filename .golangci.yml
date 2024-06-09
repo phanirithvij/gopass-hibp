@@ -50,6 +50,7 @@ linters:
   - lll
   - maintidx
   - maligned
+  - mnd
   - musttag
   - nilerr
   - noctx
